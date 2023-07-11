@@ -22,3 +22,9 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
+        
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: python-artifact
+          path: github_action\.github\workflows
