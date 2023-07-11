@@ -27,4 +27,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: python-artifact
-          path: github_action\.github\workflows
+          path: /home/runner/work/github_action/github_action
