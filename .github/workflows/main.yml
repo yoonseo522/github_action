@@ -26,5 +26,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: python-artifact
+          name: python-artifact-${{ matrix.python-version }}
           path: /home/runner/work/github_action/github_action
